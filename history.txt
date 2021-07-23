@@ -1,0 +1,41 @@
+    1  top
+    2  top -i
+    3  htop
+    4  htop -i
+    5  htop -h
+    6  htop -u=ubuntu
+    7  htop
+    8  sudo apt update && sudo apt install locales
+    9  sudo locale-gen en_US en_US.UTF-8
+   10  sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+   11  export LANG=en_US.UTF-8
+   12  sudo apt update && sudo apt install curl gnupg2 lsb-release
+   13  sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key  -o /usr/share/keyrings/ros-archive-keyring.gpg
+   14  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+   15  sudo apt update
+   16  sudo apt install ros-foxy-ros-base
+   17  sudo apt update && sudo apt install -y   build-essential   cmake   git   libbullet-dev   python3-colcon-common-extensions   python3-flake8   python3-pip   python3-pytest-cov   python3-rosdep   python3-setuptools   python3-vcstool   wget
+   18  python3 -m pip install -U   argcomplete   flake8-blind-except   flake8-builtins   flake8-class-newline   flake8-comprehensions   flake8-deprecated   flake8-docstrings   flake8-import-order   flake8-quotes   pytest-repeat   pytest-rerunfailures   pytest
+   19  sudo apt install ipython3
+   20  sudo apt install python3-dev
+   21  sudo apt install scipy
+   22  sudo apt install python3-scipy
+   23  sudo shutdown now
+   24  history
+   25  pip3 install pypot
+   26  pip3 install numpy --upgrade
+   27  ll
+   28  mkdir -p robotArm3/src
+   29  ll
+   30  mv robotArm3 robotArm3_ws
+   31  ll
+   32  cd robotArm3_ws/
+   33  ll
+   34  rm -rf src
+   35  git clone https://github.com/ThotAlion/robotArm3.git src
+   36  ll
+   37  git status
+   38  cd src/
+   39  git status
+   40  ll
+   41  history >history.txt
