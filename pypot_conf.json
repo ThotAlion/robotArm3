@@ -1,0 +1,36 @@
+{
+    "controllers": {},
+    "motorgroups": {},
+    "motors": {
+        "shoulder_z": {
+            "angle_limit": [
+                -90,
+                90
+            ],
+            "id": 28,
+            "offset": 0.0,
+            "orientation": "direct",
+            "type": "MX-64"
+        },
+        "shoulder_y": {
+            "angle_limit": [
+                -90,
+                90
+            ],
+            "id": 12,
+            "offset": 0.0,
+            "orientation": "indirect",
+            "type": "MX-64"
+        },
+        "elbow_y": {
+            "angle_limit": [
+                -90,
+                90
+            ],
+            "id": 21,
+            "offset": 0.0,
+            "orientation": "indirect",
+            "type": "MX-64"
+        }
+    }
+}
