@@ -39,3 +39,14 @@
    39  git status
    40  ll
    41  history >history.txt
+   42  ll
+   43  git commit -a
+   44  git add -A
+   45  git commit -a
+   46  git config --global user.email "thomas.peyruse@gmail.com"
+   47  git config --global user.name "ThotAlion"
+   48  git commit -a
+   49  git push
+   50  git config credential.helper store
+   51  git push
+   52  history >history.txt
