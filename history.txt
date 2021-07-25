@@ -50,3 +50,99 @@
    50  git config credential.helper store
    51  git push
    52  history >history.txt
+   53  git commit -a
+   54  git push
+   55  cd
+   56  ssh-keygen -t rsa
+   57  cd .ssh
+   58  ll
+   59  cd
+   60  ll
+   61  cd robotArm3_ws/
+   62  ll
+   63  rm -rf src
+   64  ll
+   65  git clone 
+   66  git clone git@github.com:ThotAlion/robotArm3.git src
+   67  ll
+   68  cd src/
+   69  ll
+   70  ipython3
+   71  ll
+   72  mv my_robot.json pypot_conf.json
+   73  ll
+   74  git add -A
+   75  git commit -a
+   76  ll
+   77  rm my_robot.json 
+   78  ll
+   79  git add -A
+   80  git commit -a
+   81  git push
+   82  sudo shutdown now
+   83  ll
+   84  cd robotArm3_ws/
+   85  ll
+   86  cd src
+   87  ll
+   88  ros2 pkg create --build-type ament_python ros2lite_motor_control
+   89  ll
+   90  cd ros2lite_motor_control/
+   91  ll
+   92  mkdir nodes
+   93  ll
+   94  cd nodes/
+   95  ll
+   96  touch ros2_pypot.py
+   97  ll
+   98  cd..
+   99  cd ..
+  100  cd ../..
+  101  ll
+  102  colcon build --symlink-install
+  103  cd
+  104  cd robotArm3_ws/
+  105  ll
+  106  cd
+  107  source .bashrc
+  108  ros2 run ros2lite_motor_control ros2_pypot
+  109  cd robotArm3_ws/src/
+  110  ll
+  111  cd ros2lite_motor_control/
+  112  ll
+  113  mv nodes ros2lite_motor_control
+  114  ll
+  115  ros2 run ros2lite_motor_control ros2_pypot
+  116* 
+  117  cd robotArm3_ws/
+  118  colcon build --symlink-install
+  119  source .bashrc
+  120  source ~/.bashrc
+  121  ros2 run ros2lite_motor_control ros2_pypot
+  122  cd src/ros2lite_motor_control/
+  123  ll
+  124  cd ros2lite_motor_control/
+  125  ll
+  126  mv nodes/ros2_pypot.py .
+  127  ll
+  128  rm -rf nodes/
+  129  ll
+  130  rm -rf __pycache__
+  131  ll
+  132  cd ..
+  133  ll
+  134  colcon build --symlink-install
+  135  ros2 run ros2lite_motor_control ros2_pypot
+  136  ros2 run ros2lite_motor_control ros2_pypot --ros-args -p configFilePath:=toto.json
+  137  ros2 run ros2lite_motor_control ros2_pypot --ros-args -p configFilePath:=toti.json
+  138  cd
+  139  ipython3
+  140  ros2 run ros2lite_motor_control ros2_pypot --ros-args -p configFilePath:=~/robotArm3/src/pypot_conf.json
+  141  ros2 run ros2lite_motor_control ros2_pypot --ros-args -p configFilePath:=/home/ubuntu/robotArm3/src/pypot_conf.json
+  142  ros2 run ros2lite_motor_control ros2_pypot --ros-args -p configFilePath:=/home/ubuntu/robotArm3_ws/src/pypot_conf.json
+  143  ipython3
+  144  cd robotArm3_ws/
+  145  ll
+  146  cd src
+  147  ll
+  148  history > history.txt 
